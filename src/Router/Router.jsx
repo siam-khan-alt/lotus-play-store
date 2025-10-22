@@ -5,6 +5,7 @@ import OurGames from "../Pages/OurGames";
 import Details from "../Pages/Details";
 import Login from "../Pages/Login";
 import Register from "../Pages/Register";
+import Error404 from "../Pages/Error404";
 
 const router = createBrowserRouter([
   {
@@ -26,5 +27,6 @@ const router = createBrowserRouter([
       }
     ],
   },
+  {path:'/*', Component: Error404}
 ]);
 export default router;
