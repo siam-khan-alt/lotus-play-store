@@ -1,8 +1,26 @@
-import React from "react";
+import React, { use } from "react";
 import { FaGoogle } from "react-icons/fa";
-import { Link } from "react-router";
+import { Link, useLocation, useNavigate } from "react-router";
+import { AuthContext } from "../Context/AuthContext";
 
 const Login = () => {
+    const {LogIn, setUser}= use(AuthContext)
+     const location = useLocation();
+  const from = location.state || "/";
+  const navigate = useNavigate();
+    const handleLogIn=(e)=>{
+        e.preventDefault()
+        const email= e.target.email.value
+        const password= e.target.password.value
+        console.log(email , password);
+        
+        LogIn(email, password).then((result)=>{
+            alert ('create succesfull')
+        setUser(result.user)
+          navigate(from)})
+            .catch((err=>console.log(err.message)
+            ))
+    }
   return (
     <div>
       <div className="hero bg-[#0F172A] md:min-h-screen">
@@ -12,15 +30,17 @@ const Login = () => {
           </div>
           <div className="card bg-[#1E293B] w-full max-w-sm shrink-0 shadow-2xl">
             <div className="card-body">
-              <form className="fieldset">
+              <form onSubmit={handleLogIn} className="fieldset">
                 <label className="label text-white">Email</label>
                 <input
+                name="email"
                   type="email"
                   className="input bg-[#0F172A] placeholder-gray-400"
                   placeholder="Email"
                 />
                 <label className="label text-white">Password</label>
                 <input
+                name="password"
                   type="password"
                   className="input bg-[#0F172A] placeholder-gray-400"
                   placeholder="Password"

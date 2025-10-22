@@ -6,6 +6,8 @@ import Details from "../Pages/Details";
 import Login from "../Pages/Login";
 import Register from "../Pages/Register";
 import Error404 from "../Pages/Error404";
+import Profile from "../Pages/Profile";
+import PrivateRoute from "../Private/PrivateRoute";
 
 const router = createBrowserRouter([
   {
@@ -17,13 +19,18 @@ const router = createBrowserRouter([
         path:'/games',Component: OurGames, loader: () => fetch("../game.json")
       },
       {
-        path: '/details/:Id', Component:Details,loader: () => fetch("../game.json")
+        path: '/details/:Id', 
+        element:<PrivateRoute><Details/></PrivateRoute>
+        ,loader: () => fetch("../game.json")
       },
       {
         path:'/login', Component:Login
       },
       {
         path:'/register', Component:Register
+      },
+      {
+        path:'/profile', element:<PrivateRoute><Profile/></PrivateRoute>
       }
     ],
   },

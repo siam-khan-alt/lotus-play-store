@@ -1,8 +1,21 @@
-import React from "react";
+import React, { use } from "react";
 import { Link, NavLink } from "react-router";
-import logo from "../assets/lotus-play-store.jpg";
+import logo from "../assets/lotus-img.jpg";
+import img from "../assets/anonymouss-.webp";
+import { AuthContext } from "../Context/AuthContext";
 
 const Navbar = () => {
+  const { users, LogOut } = use(AuthContext);
+  console.log(users);
+  
+  const handleLogOut=()=>{
+  LogOut().then(()=>{
+            alert ('Log out succesfull')
+        })
+            .catch((err=>console.log(err.message)
+            ))
+  }
+
   const links = (
     <>
       <NavLink to={"/"}>Home</NavLink>
@@ -39,25 +52,38 @@ const Navbar = () => {
             </ul>
           </div>
           <img src={logo} alt="" className="h-10 w-10 rounded-full" />
+          <h4 className="font-bold">Play Store</h4>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu flex justify-center items-center gap-5 menu-horizontal px-1">
             {links}
           </ul>
         </div>
-        <div className="navbar-end">
-         <Link to={'/login'}> <button
-            className="btn hover:bg-[#6D28D9] mr-2 text-[#F8FAFC] bg-[#7C3AED] border-[#14B8A6]
+        <div className="navbar-end">{users? <> <Link to={'/profile'}><img  src={users?.photoURL?users?.photoURL: img} alt="" className="rounded-full w-10 h-10" /></Link> <button
+              onClick={handleLogOut} className="btn ml-2 hover:bg-[#6D28D9] text-[#F8FAFC] bg-[#7C3AED] border-[#14B8A6]
 "
-          >
-            Login
-          </button></Link>
-         <Link to={'/register'}> <button
-            className="btn hover:bg-[#6D28D9] text-[#F8FAFC] bg-[#7C3AED] border-[#14B8A6]
+            >
+              Logout
+            </button></>:
+         
+          <><Link to={"/login"}>
+            {" "}
+            <button
+              className="btn hover:bg-[#6D28D9] mr-2 text-[#F8FAFC] bg-[#7C3AED] border-[#14B8A6]
 "
-          >
-           Register
-          </button></Link>
+            >
+              Login
+            </button>
+          </Link>
+          <Link to={"/register"}>
+            {" "}
+            <button
+              className="btn hover:bg-[#6D28D9] text-[#F8FAFC] bg-[#7C3AED] border-[#14B8A6]
+"
+            >
+              Register
+            </button>
+          </Link></>}
         </div>
       </div>
     </div>
