@@ -3,6 +3,8 @@ import MainLayout from "../Layout/MainLayout";
 import Home from "../Pages/Home";
 import OurGames from "../Pages/OurGames";
 import Details from "../Pages/Details";
+import Login from "../Pages/Login";
+import Register from "../Pages/Register";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +17,12 @@ const router = createBrowserRouter([
       },
       {
         path: '/details/:Id', Component:Details,loader: () => fetch("../game.json")
+      },
+      {
+        path:'/login', Component:Login
+      },
+      {
+        path:'/register', Component:Register
       }
     ],
   },

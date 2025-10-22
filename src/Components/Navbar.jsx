@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
 import logo from "../assets/lotus-play-store.jpg";
 
 const Navbar = () => {
@@ -46,18 +46,18 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a
+         <Link to={'/login'}> <button
             className="btn hover:bg-[#6D28D9] mr-2 text-[#F8FAFC] bg-[#7C3AED] border-[#14B8A6]
 "
           >
             Login
-          </a>{" "}
-          <a
+          </button></Link>
+         <Link to={'/register'}> <button
             className="btn hover:bg-[#6D28D9] text-[#F8FAFC] bg-[#7C3AED] border-[#14B8A6]
 "
           >
            Register
-          </a>
+          </button></Link>
         </div>
       </div>
     </div>
