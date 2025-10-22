@@ -4,6 +4,7 @@ import Slider from "../Components/Slider";
 import Popular from "../Components/Popular";
 import { useLoaderData } from "react-router";
 import { FaArrowRight } from "react-icons/fa";
+import Newslater from "../Components/Newslater";
 
 const Home = () => {
     const data = useLoaderData()
@@ -30,6 +31,7 @@ const Home = () => {
         <button className=" btn hover:bg-[#6D28D9] border-[#14B8A6]
   bg-[#7C3AED]">More Game <FaArrowRight/></button>
       </div>
+      <Newslater></Newslater>
     </div>
   );
 };
