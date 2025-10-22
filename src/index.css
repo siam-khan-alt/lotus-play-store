@@ -1,3 +1,6 @@
 @import "tailwindcss";
 @plugin "daisyui";
+.menu a.active{
+  @apply font-bold
+}
 

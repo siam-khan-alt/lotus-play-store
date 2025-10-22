@@ -1,5 +1,6 @@
 import React from "react";
 import { CiStar } from "react-icons/ci";
+import { Link } from "react-router";
 
 const Games = ({ game }) => {
   return (
@@ -22,9 +23,9 @@ const Games = ({ game }) => {
               {game.ratings}
             </div>
           </div>
-          <button className="px-4 py-2 bg-[#7C3AED] text-white rounded-md hover:bg-[#6D28D9] transition">
+          <Link to={`/details/${game.id}`}><button className="px-4 py-2 bg-[#7C3AED] text-white rounded-md hover:bg-[#6D28D9] transition">
             Details
-          </button>
+          </button></Link>
         </div>
       </div>
     </div>
