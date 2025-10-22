@@ -1,0 +1,102 @@
+[
+  {
+    "id": "1",
+    "title": "Player Unknown's Battleground (PUBG)",
+    "coverPhoto": "https://i.ibb.co.com/v6s7bhrr/pubg.jpg",
+    "category": "FPS",
+    "downloadLink": "https://www.pubgmobile.com/en-US/home.shtml",
+    "description": "PUBG Mobile is a fast-paced battle royale game where players fight for survival, strategy, and victory on dynamic maps.",
+    "ratings": 4.5,
+    "developer": "Krafton"
+  },
+  {
+    "id": "2",
+    "title": "Valorant",
+    "coverPhoto": "https://i.ibb.co.com/QFk3wyM4/varlorant.jpg",
+    "category": "Tactical Shooter",
+    "downloadLink": "https://playvalorant.com/",
+    "description": "Valorant is a 5v5 character-based tactical shooter where precision and strategy determine the winner.",
+    "ratings": 4.7,
+    "developer": "Riot Games"
+  },
+  {
+    "id": "3",
+    "title": "GTA V",
+    "coverPhoto": "https://i.ibb.co.com/yFG23jgN/gta-v.jpg",
+    "category": "Open World",
+    "downloadLink": "https://www.rockstargames.com/V/",
+    "description": "GTA V offers an immersive open-world experience with missions, exploration, and action-packed gameplay.",
+    "ratings": 4.8,
+    "developer": "Rockstar Games"
+  },
+  {
+    "id": "4",
+    "title": "Minecraft",
+    "coverPhoto": "https://i.ibb.co.com/PsM85v1D/minecraft.jpg",
+    "category": "Sandbox",
+    "downloadLink": "https://www.minecraft.net/en-us",
+    "description": "Minecraft is a sandbox game about placing blocks and going on adventures in procedurally generated worlds.",
+    "ratings": 4.6,
+    "developer": "Mojang Studios"
+  },
+  {
+    "id": "5",
+    "title": "Fortnite",
+    "coverPhoto": "https://i.ibb.co.com/qYfMNkWW/fortnight.png",
+    "category": "Battle Royale",
+    "downloadLink": "https://www.epicgames.com/fortnite/en-US/home",
+    "description": "Fortnite is a battle royale game where players compete to be the last one standing, building and fighting strategically.",
+    "ratings": 4.4,
+    "developer": "Epic Games"
+  },
+  {
+    "id": "6",
+    "title": "Call of Duty: Mobile",
+    "coverPhoto": "https://i.ibb.co.com/VYLvQGBt/call-of-dity.jpg",
+    "category": "FPS",
+    "downloadLink": "https://www.callofduty.com/mobile",
+    "description": "Call of Duty Mobile is a multiplayer FPS game with classic maps and fast-paced action.",
+    "ratings": 4.6,
+    "developer": "Activision"
+  },
+  {
+    "id": 7,
+    "title": "League of Legends",
+    "coverPhoto": "https://i.ibb.co.com/Q3ZwMnhg/league-of-legends.jpg",
+    "category": "MOBA",
+    "downloadLink": "https://www.leagueoflegends.com/",
+    "description": "League of Legends is a team-based strategy game where champions fight to destroy the enemy Nexus.",
+    "ratings": 4.7,
+    "developer": "Riot Games"
+  },
+  {
+    "id": "8",
+    "title": "Among Us",
+    "coverPhoto": "https://i.ibb.co.com/rfR8nTGW/Among-Us-Key-Art.webp",
+    "category": "Party Game",
+    "downloadLink": "https://www.innersloth.com/gameAmongUs.php",
+    "description": "Among Us is a multiplayer party game where players complete tasks and identify the impostor.",
+    "ratings": 4.3,
+    "developer": "InnerSloth"
+  },
+  {
+    "id": "9",
+    "title": "Apex Legends",
+    "coverPhoto": "https://i.ibb.co.com/GvkT9fYF/apex-legend.jpg",
+    "category": "Battle Royale",
+    "downloadLink": "https://www.ea.com/games/apex-legends",
+    "description": "Apex Legends is a free-to-play battle royale game with unique legends and team-based strategy.",
+    "ratings": 4.5,
+    "developer": "Respawn Entertainment"
+  },
+  {
+    "id": 10,
+    "title": "The Witcher 3: Wild Hunt",
+    "coverPhoto": "https://i.ibb.co.com/vx530DBm/the-witcher-game-wallpaper-image.jpg",
+    "category": "RPG",
+    "downloadLink": "https://thewitcher.com/en/witcher3",
+    "description": "The Witcher 3 is an open-world RPG with story-driven quests and monster hunting.",
+    "ratings": "4.9",
+    "developer": "CD Projekt"
+  }
+]

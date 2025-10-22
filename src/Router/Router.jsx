@@ -7,8 +7,8 @@ import Home from "../Pages/Home";
       path:'/',
       Component:MainLayout,
       children:[
-        {index:true, Component:Home},
-        
+        {index:true, Component:Home, loader: ()=>fetch('../game.json')},
+
       ]
     }
  ])
