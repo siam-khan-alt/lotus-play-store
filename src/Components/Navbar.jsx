@@ -1,13 +1,14 @@
 import React from "react";
 import { NavLink } from "react-router";
-import logo from '../assets/lotus-play-store.jpg'
+import logo from "../assets/lotus-play-store.jpg";
 
 const Navbar = () => {
-
-    const links= <>
-    <NavLink to={'/'}>Home</NavLink>
-    <NavLink to={'/details'}>Game Details</NavLink>
+  const links = (
+    <>
+      <NavLink to={"/"}>Home</NavLink>
+      <NavLink to={"/games"}>Our Games</NavLink>
     </>
+  );
   return (
     <div>
       <div className="navbar  shadow-sm">
@@ -34,19 +35,29 @@ const Navbar = () => {
               tabIndex="-1"
               className="menu menu-sm dropdown-content bg-[#0F172A] rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
-           {links}
+              {links}
             </ul>
           </div>
           <img src={logo} alt="" className="h-10 w-10 rounded-full" />
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu flex justify-center items-center gap-5 menu-horizontal px-1">
-          {links}
+            {links}
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn hover:bg-[#6D28D9] text-[#F8FAFC] bg-[#7C3AED] border-[#14B8A6]
-">Login</a>
+          <a
+            className="btn hover:bg-[#6D28D9] mr-2 text-[#F8FAFC] bg-[#7C3AED] border-[#14B8A6]
+"
+          >
+            Login
+          </a>{" "}
+          <a
+            className="btn hover:bg-[#6D28D9] text-[#F8FAFC] bg-[#7C3AED] border-[#14B8A6]
+"
+          >
+           Register
+          </a>
         </div>
       </div>
     </div>
