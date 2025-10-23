@@ -2,8 +2,11 @@ import React from "react";
 import { useLoaderData } from "react-router";
 
 import Games from "../Components/Games";
+import useTitle from "../Hooks/useTitle";
+
 
 const OurGames = () => {
+  useTitle('Our Games')
   const games = useLoaderData();
   return (
     <div className="bg-[#0F172A]">

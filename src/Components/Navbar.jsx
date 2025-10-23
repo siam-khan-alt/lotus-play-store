@@ -6,7 +6,7 @@ import { AuthContext } from "../Context/AuthContext";
 
 const Navbar = () => {
   const { users, LogOut } = use(AuthContext);
-  console.log(users);
+  
   
   const handleLogOut=()=>{
   LogOut().then(()=>{
@@ -46,13 +46,17 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex="-1"
-              className="menu menu-sm dropdown-content bg-[#0F172A] rounded-box z-1 mt-3 w-52 p-2 shadow"
+              className="menu menu-sm dropdown-content bg-[#0F172A] rounded-box z-1 mt-1 w-52 p-2 shadow"
             >
               {links}
             </ul>
           </div>
+          <Link to={'/'}>
           <img src={logo} alt="" className="h-10 w-10 rounded-full" />
+          </Link>
+          <Link to={'/'}>
           <h4 className="font-bold">Play Store</h4>
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu flex justify-center items-center gap-5 menu-horizontal px-1">

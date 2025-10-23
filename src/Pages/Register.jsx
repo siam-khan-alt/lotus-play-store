@@ -2,8 +2,11 @@ import React, { use } from "react";
 import { FaGoogle } from "react-icons/fa";
 import { Link } from "react-router";
 import { AuthContext } from "../Context/AuthContext";
+import useTitle from "../Hooks/useTitle";
+
 
 const Register = () => {
+    useTitle('Register')
     const {SignUp, profileUpdate}=use(AuthContext)
     const handleSignUp=(e)=>{
         e.preventDefault()

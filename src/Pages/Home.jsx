@@ -6,14 +6,17 @@ import { Link, useLoaderData } from "react-router";
 import { FaArrowRight } from "react-icons/fa";
 import Newslater from "../Components/Newslater";
 import Games from "../Components/Games";
+import useTitle from "../Hooks/useTitle";
+
 
 const Home = () => {
   const games = useLoaderData();
+  useTitle('Home')
 
   return (
     <div className="bg-[#0F172A] ">
       <div
-        className=" max-h-[500px] bg-cover bg-center w-11/12 mx-auto rounded-sm md:rounded-2xl py-5 "
+        className=" mt-12 md:mt-0 max-h-[500px] bg-cover bg-center w-11/12 mx-auto rounded-sm md:rounded-2xl py-5 "
         style={{ backgroundImage: `url(${bgImg})` }}
       >
         <Slider></Slider>

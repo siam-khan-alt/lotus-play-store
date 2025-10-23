@@ -8,20 +8,26 @@ import Register from "../Pages/Register";
 import Error404 from "../Pages/Error404";
 import Profile from "../Pages/Profile";
 import PrivateRoute from "../Private/PrivateRoute";
+import ProfileUpdate from "../Pages/ProfileUpdate";
+import ResetPass from "../Pages/ResetPass";
+import Loader from "../Pages/Loader";
 
 const router = createBrowserRouter([
   {
     path: "/",
     Component: MainLayout,
     children: [
-      { index: true, Component: Home, loader: () => fetch("../game.json") },
+      { index: true, Component: Home, loader: () => fetch("../game.json"),
+         hydrateFallbackElement:<Loader></Loader>
+       },
       {
-        path:'/games',Component: OurGames, loader: () => fetch("../game.json")
+        path:'/games',Component: OurGames, loader: () => fetch("../game.json"), hydrateFallbackElement:<Loader></Loader>
       },
       {
         path: '/details/:Id', 
         element:<PrivateRoute><Details/></PrivateRoute>
-        ,loader: () => fetch("../game.json")
+        ,loader: () => fetch("../game.json"),
+        hydrateFallbackElement:<Loader></Loader>
       },
       {
         path:'/login', Component:Login
@@ -31,6 +37,12 @@ const router = createBrowserRouter([
       },
       {
         path:'/profile', element:<PrivateRoute><Profile/></PrivateRoute>
+      },
+      {
+        path:'/updateProfile', element:<PrivateRoute><ProfileUpdate/></PrivateRoute>
+      },
+      {
+        path: '/reset', Component: ResetPass
       }
     ],
   },

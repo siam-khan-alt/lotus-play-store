@@ -1,12 +1,18 @@
-import React, { use } from "react";
+import React, { use, useState } from "react";
 import { FaGoogle } from "react-icons/fa";
 import { Link, useLocation, useNavigate } from "react-router";
 import { AuthContext } from "../Context/AuthContext";
+import useTitle from "../Hooks/useTitle";
+
 
 const Login = () => {
+    useTitle('Login')
+    const [email, setEmail]=useState('')
+   
+
     const {LogIn, setUser}= use(AuthContext)
      const location = useLocation();
-  const from = location.state || "/";
+  const goBack = location.state || "/";
   const navigate = useNavigate();
     const handleLogIn=(e)=>{
         e.preventDefault()
@@ -17,7 +23,7 @@ const Login = () => {
         LogIn(email, password).then((result)=>{
             alert ('create succesfull')
         setUser(result.user)
-          navigate(from)})
+          navigate(goBack)})
             .catch((err=>console.log(err.message)
             ))
     }
@@ -33,6 +39,7 @@ const Login = () => {
               <form onSubmit={handleLogIn} className="fieldset">
                 <label className="label text-white">Email</label>
                 <input
+                onChange={(e)=> setEmail(e.target.value)}
                 name="email"
                   type="email"
                   className="input bg-[#0F172A] placeholder-gray-400"
@@ -46,10 +53,10 @@ const Login = () => {
                   placeholder="Password"
                 />
                 <div>
-                  <a className="link link-hover text-[#7C3AED] hover:text-[#9333EA]">Forgot password?</a>
-
-                 
-                </div>
+                    <Link to={'/reset'} state={{email}}>
+                     <p className="link link-hover text-[#7C3AED] hover:text-[#9333EA]">Forgot password?</p>
+                    </Link>
+                 </div>
 
                 <button className="btn bg-[#7C3AED] hover:bg-[#6D28D9] text-white mt-4">
                   Login

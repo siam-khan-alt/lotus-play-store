@@ -1,6 +1,7 @@
 import {
   createUserWithEmailAndPassword,
   onAuthStateChanged,
+  sendPasswordResetEmail,
   signInWithEmailAndPassword,
   signOut,
   updateProfile,
@@ -11,7 +12,7 @@ import { useEffect, useState } from "react";
 
 const AuthProvider = ({ children }) => {
   const [users, setUser] = useState(null);
-  const [loadig, setLoading] = useState(true);
+  const [loading, setLoading] = useState(true);
   const SignUp = (email, password) => {
     return createUserWithEmailAndPassword(auth, email, password);
   };
@@ -30,6 +31,9 @@ const AuthProvider = ({ children }) => {
     setLoading(true);
     return signOut(auth);
   };
+  const PasswordReset=(email)=>{
+    return sendPasswordResetEmail(auth, email)
+  }
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
@@ -44,11 +48,14 @@ const AuthProvider = ({ children }) => {
 
   const authInfo = {
     users,
+    loading,
+    setLoading,
     setUser,
     SignUp,
     LogIn,
     LogOut,
     profileUpdate,
+    PasswordReset
   };
   return <AuthContext value={authInfo}>{children}</AuthContext>;
 };

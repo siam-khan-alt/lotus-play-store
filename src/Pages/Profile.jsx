@@ -1,8 +1,12 @@
 import React, { useContext } from "react";
 import { AuthContext } from "../Context/AuthContext";
 import img from "../assets/anonymouss-.webp";
+import { Link } from "react-router";
+import useTitle from "../Hooks/useTitle";
+
 
 const Profile = () => {
+    useTitle('Profile')
   const { users } = useContext(AuthContext);
 
   return (
@@ -19,9 +23,12 @@ const Profile = () => {
         <p className="text-gray-400 mt-1">
           {users?.email || "No email available"}
         </p>
+        <Link to={'/updateProfile'}>
         <button className="mt-6 btn w-full hover:bg-[#6D28D9] text-[#F8FAFC] bg-[#7C3AED] border-[#14B8A6]  font-medium">
           Update Info
         </button>
+        </Link>
+        
       </div>
     </div>
   );

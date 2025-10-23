@@ -1,8 +1,11 @@
 import React from 'react';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
+import useTitle from '../Hooks/useTitle';
+
 
 const Error404 = () => {
+    useTitle('Error 404')
     return (
         <div className='bg-[#0F172A] text-white '>
             <Navbar></Navbar>
