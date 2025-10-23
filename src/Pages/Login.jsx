@@ -4,6 +4,8 @@ import { Link, useLocation, useNavigate } from "react-router";
 import { AuthContext } from "../Context/AuthContext";
 import useTitle from "../Hooks/useTitle";
 import { IoEyeOff } from "react-icons/io5";
+import { ClipLoader } from "react-spinners";
+import { toast } from "react-toastify";
 
 const Login = () => {
   useTitle("Login");
@@ -18,15 +20,15 @@ const Login = () => {
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
-    console.log(email, password);
+    
 
     LogIn(email, password)
       .then((result) => {
-        alert("create succesfull");
+        toast.success("create succesfull");
         setUser(result.user);
         navigate(goBack);
       })
-      .catch((err) => console.log(err.message));
+      .catch((err) => toast.error(err.message));
   };
 
   const handleGoogleSignin = () => {
@@ -35,14 +37,15 @@ const Login = () => {
         setLoading(false);
         setUser(res.user);
         navigate(goBack);
-        alert("Signin successful");
+        toast.success("Login successful");
       })
       .catch((e) => {
-        alert(e.message);
+        toast.error(e.message);
       });
   };
   return (
     <div>
+      
       <div className="hero bg-[#0F172A] md:min-h-screen">
         <div className="hero-content flex-col sm:w-[600px] md:w-[800px]">
           <div className="text-center lg:text-left">
@@ -59,7 +62,7 @@ const Login = () => {
                   className="input bg-[#0F172A] placeholder-gray-400"
                   placeholder="Email"
                 />
-                  <div className="relative">
+                <div className="relative">
                   <label className="label text-white mb-1">Password</label>
                   <input
                     type={show ? "text" : "password"}

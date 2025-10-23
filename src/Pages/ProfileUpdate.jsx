@@ -2,6 +2,7 @@ import React, { use } from 'react';
 import { AuthContext } from '../Context/AuthContext';
 import {  useNavigate } from 'react-router';
 import useTitle from '../Hooks/useTitle';
+import { toast } from 'react-toastify';
 
 
 const ProfileUpdate = () => {
@@ -14,9 +15,9 @@ const ProfileUpdate = () => {
   const  displayName = e.target.name?.value
         const photoURL= e.target.photo?.value
          profileUpdate(displayName, photoURL).then(()=>{
-            alert ('update succesfull')
+            toast.success('update succesfull')
             navigate(-1)
-         }).catch((err)=> console.log(err.message)
+         }).catch((err)=> toast.error(err.message)
             )
     }
     return (

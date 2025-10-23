@@ -4,6 +4,7 @@ import { Link } from "react-router";
 import { AuthContext } from "../Context/AuthContext";
 import useTitle from "../Hooks/useTitle";
 import { IoEyeOff } from "react-icons/io5";
+import { toast } from "react-toastify";
 
 const Register = () => {
   const [show, setShow] = useState(false);
@@ -11,21 +12,22 @@ const Register = () => {
   const { SignUp, profileUpdate, SignInGoogle, setUser,setLoading } = use(AuthContext);
   const handleSignUp = (e) => {
     e.preventDefault();
+    setLoading(true)
     const email = e.target.email?.value;
     const displayName = e.target.name?.value;
     const photoURL = e.target.photo?.value;
     const password = e.target.password?.value;
 
     if (password.length < 6) {
-      alert("Password must be at least 6 characters long!");
+      toast.error("Password must be at least 6 characters long!");
       return;
     }
     if (!/[A-Z]/.test(password)) {
-      alert("Password at least one uppercase letter!");
+     toast.error("Password at least one uppercase letter!");
       return;
     }
     if (!/[a-z]/.test(password)) {
-      alert("Password at least one lowercase letter!");
+      toast.error("Password at least one lowercase letter!");
       return;
     }
 
@@ -33,10 +35,12 @@ const Register = () => {
       .then(() => {
         profileUpdate(displayName, photoURL)
           .then(() => {})
-          .catch((err) => console.log(err.message));
-        alert("create succesfull");
+          .catch((err) => toast.error(err.message));
+        toast.success("create succesfull");
       })
-      .catch((err) => console.log(err.message));
+      .catch((err) => {toast.error(err.message)
+        setLoading(false)
+      });
   };
 
   const handleGoogleSignin = () => {
@@ -45,10 +49,10 @@ const Register = () => {
         setLoading(false);
         setUser(res.user);
         
-        alert("Signin successful");
+        toast.success("Signin successful");
       })
       .catch((e) => {
-        alert(e.message);
+        toast.error(e.message);
       });
   };
   return (

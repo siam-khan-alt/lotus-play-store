@@ -2,6 +2,7 @@ import React, { use, useRef } from 'react';
 import useTitle from '../Hooks/useTitle';
 import { useLocation } from 'react-router';
 import { AuthContext } from '../Context/AuthContext';
+import { toast } from 'react-toastify';
 
 
 const ResetPass = () => {
@@ -16,11 +17,11 @@ const ResetPass = () => {
         const email=emailRef.current.value
         PasswordReset(email).then(() => {
         setLoading(false);
-        alert ("Check your email to reset password");
+        window.open(`https://mail.google.com/mail/u/0/#inbox`, "_blank");
         emailRef.current.value=''
       })
       .catch((e) => {
-        alert (e.message);
+        toast.error(e.message);
       });
     }
     return (

@@ -3,6 +3,7 @@ import { Link, NavLink } from "react-router";
 import logo from "../assets/lotus-img.jpg";
 import img from "../assets/anonymouss-.webp";
 import { AuthContext } from "../Context/AuthContext";
+import { toast } from "react-toastify";
 
 const Navbar = () => {
   const { users, LogOut } = use(AuthContext);
@@ -10,9 +11,9 @@ const Navbar = () => {
   
   const handleLogOut=()=>{
   LogOut().then(()=>{
-            alert ('Log out succesfull')
+            toast.success('Log out succesfull')
         })
-            .catch((err=>console.log(err.message)
+            .catch((err=>toast.error(err.message)
             ))
   }
 
