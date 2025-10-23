@@ -21,7 +21,7 @@ const Profile = () => {
           {users?.displayName || "Anonymous User"}
         </h2>
         <p className="text-gray-400 mt-1">
-          {users?.email || "No email available"}
+          {users?.email }
         </p>
         <Link to={'/updateProfile'}>
         <button className="mt-6 btn w-full hover:bg-[#6D28D9] text-[#F8FAFC] bg-[#7C3AED] border-[#14B8A6]  font-medium">

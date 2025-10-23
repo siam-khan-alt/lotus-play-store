@@ -11,6 +11,7 @@ import PrivateRoute from "../Private/PrivateRoute";
 import ProfileUpdate from "../Pages/ProfileUpdate";
 import ResetPass from "../Pages/ResetPass";
 import Loader from "../Pages/Loader";
+import About from "../Pages/About";
 
 const router = createBrowserRouter([
   {
@@ -43,6 +44,9 @@ const router = createBrowserRouter([
       },
       {
         path: '/reset', Component: ResetPass
+      },
+      {
+        path: '/about', Component: About
       }
     ],
   },

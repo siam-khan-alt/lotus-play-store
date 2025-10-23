@@ -16,19 +16,19 @@ const Login = () => {
   const location = useLocation();
   const goBack = location.state || "/";
   const navigate = useNavigate();
+
+
   const handleLogIn = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
-    
-
     LogIn(email, password)
       .then((result) => {
         toast.success("create succesfull");
         setUser(result.user);
         navigate(goBack);
       })
-      .catch((err) => toast.error(err.message));
+    .catch((err) => {toast.error(err.message)});
   };
 
   const handleGoogleSignin = () => {
@@ -60,7 +60,8 @@ const Login = () => {
                   name="email"
                   type="email"
                   className="input bg-[#0F172A] placeholder-gray-400"
-                  placeholder="Email"
+                  placeholder="Your email"
+                  required
                 />
                 <div className="relative">
                   <label className="label text-white mb-1">Password</label>
@@ -69,10 +70,11 @@ const Login = () => {
                     name="password"
                     placeholder="Password"
                     className="input bg-[#0F172A] placeholder-gray-400 text-white"
+                    required
                   />
                   <span
                     onClick={() => setShow(!show)}
-                    className="absolute right-[8px] top-[36px] cursor-pointer z-50"
+                    className="absolute right-[10px] sm:right-[24px] md:right-[30px] top-[36px] cursor-pointer z-50"
                   >
                     {show ? <FaEye /> : <IoEyeOff />}
                   </span>

@@ -7,7 +7,7 @@ const Newslater = () => {
         <div className="w-11/12 mx-auto text-center space-y-4">
           <h2 className="text-2xl font-bold">Subscribe to Our Newsletter</h2>
           <p className="text-gray-300">
-            Get updates about new games, developer news, and exclusive
+            Get updates about new games,indie developer news, and exclusive
             offers!
           </p>
 

@@ -1,12 +1,12 @@
-// Import Swiper React components
+
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
+
 
 import "swiper/css";
 import "swiper/css/navigation";
 
-// import required modules
+
 import { Autoplay, Navigation } from "swiper/modules";
 import pubg from "../assets/pubg.jpg";
 import gta from "../assets/gta v.jpg";
@@ -20,7 +20,7 @@ export default function Slider() {
         loop={true}
         centeredSlides={true}
         slidesPerView={1}
-        spaceBetween={30}
+        
         navigation={true}
         autoplay={{ delay: 3000 }}
         modules={[Navigation, Autoplay]}

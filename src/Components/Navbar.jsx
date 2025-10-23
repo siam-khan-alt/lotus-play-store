@@ -20,12 +20,12 @@ const Navbar = () => {
   const links = (
     <>
       <NavLink to={"/"}>Home</NavLink>
-      <NavLink to={"/games"}>Our Games</NavLink>
+      <NavLink to={"/about"}>About</NavLink>
     </>
   );
   return (
-    <div>
-      <div className="navbar bg-[#0F172A]  shadow-sm">
+    <div className="">
+      <div className="w-11/12 mx-auto py-3 flex items-center justify-center bg-[#0F172A]  shadow-sm">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -59,12 +59,16 @@ const Navbar = () => {
           <h4 className="font-bold">Play Store</h4>
           </Link>
         </div>
-        <div className="navbar-center hidden lg:flex">
+        
+        <div className="navbar-end">
+          <div className="mr-2 hidden lg:flex">
           <ul className="menu flex justify-center items-center gap-5 menu-horizontal px-1">
             {links}
           </ul>
-        </div>
-        <div className="navbar-end">{users? <> <Link to={'/profile'}><img  src={users?.photoURL?users?.photoURL: img} alt="" className="rounded-full w-10 h-10" /></Link> <button
+        </div> 
+          
+          
+          {users? <> <Link to={'/profile'}><img  src={users?.photoURL?users?.photoURL: img} alt="" className="rounded-full w-10 h-10" /></Link> <button
               onClick={handleLogOut} className="btn ml-2 hover:bg-[#6D28D9] text-[#F8FAFC] bg-[#7C3AED] border-[#14B8A6]
 "
             >

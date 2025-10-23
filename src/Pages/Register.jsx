@@ -37,6 +37,7 @@ const Register = () => {
           .then(() => {})
           .catch((err) => toast.error(err.message));
         toast.success("create succesfull");
+        e.target.reset()
       })
       .catch((err) => {toast.error(err.message)
         setLoading(false)
@@ -84,7 +85,8 @@ const Register = () => {
                   name="email"
                   type="email"
                   className="input bg-[#0F172A] placeholder-gray-400"
-                  placeholder="Email"
+                  placeholder="Your email"
+                  required
                 />
                 <div className="relative">
                   <label className="label text-white mb-1">Password</label>
@@ -93,10 +95,11 @@ const Register = () => {
                     name="password"
                     placeholder="Password"
                     className="input bg-[#0F172A] placeholder-gray-400 text-white"
+                    required
                   />
                   <span
                     onClick={() => setShow(!show)}
-                    className="absolute right-[8px] top-[36px] cursor-pointer z-50"
+                    className="absolute right-[10px] sm:right-[24px] md:right-[30px] top-[36px] cursor-pointer z-50"
                   >
                     {show ? <FaEye /> : <IoEyeOff />}
                   </span>
