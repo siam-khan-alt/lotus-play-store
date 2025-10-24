@@ -24,7 +24,7 @@ const Login = () => {
     const password = e.target.password.value;
     LogIn(email, password)
       .then((result) => {
-        toast.success("create succesfull");
+        toast.success("Login succesfull");
         setUser(result.user);
         navigate(goBack);
       })

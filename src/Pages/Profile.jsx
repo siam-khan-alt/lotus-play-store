@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { AuthContext } from "../Context/AuthContext";
-import img from "../assets/anonymouss-.webp";
+import img from "../assets/no img .jpeg";
 import { Link } from "react-router";
 import useTitle from "../Hooks/useTitle";
 
