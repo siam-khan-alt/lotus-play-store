@@ -4,7 +4,7 @@ import { Link } from "react-router";
 
 const Games = ({ game }) => {
   return (
-    <div><Link to={`/details/${game.id}`}>
+    <Link to={`/details/${game.id}`}><div>
       <div className="  card  bg-[#1E293B] max-w-96 shadow-sm">
         <figure>
           <img
@@ -25,8 +25,8 @@ const Games = ({ game }) => {
           </div>
          
         </div>
-      </div></Link>
-    </div>
+      </div>
+    </div></Link>
   );
 };
 
