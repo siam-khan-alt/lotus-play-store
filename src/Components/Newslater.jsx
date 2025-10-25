@@ -15,7 +15,7 @@ const Newslater = () => {
             <input
               type="email"
               placeholder="Enter your email"
-              className="px-4 py-2 rounded-md w-72 text-white"
+              className="px-4 py-2 rounded-md w-72 border text-white"
             />
             <button className="px-5 py-2 bg-[#7C3AED] rounded-md hover:bg-[#6D28D9] transition">
               Subscribe

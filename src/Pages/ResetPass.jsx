@@ -17,7 +17,7 @@ const ResetPass = () => {
         const email=emailRef.current.value
         PasswordReset(email).then(() => {
         setLoading(false);
-        window.open(`https://mail.google.com/mail/u/0/#inbox`, "_blank");
+        window.open(`https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox`, "_blank");
         emailRef.current.value=''
       })
       .catch((e) => {

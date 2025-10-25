@@ -4,7 +4,7 @@ import { Link } from "react-router";
 
 const Games = ({ game }) => {
   return (
-    <div>
+    <div><Link to={`/details/${game.id}`}>
       <div className="  card  bg-[#1E293B] max-w-96 shadow-sm">
         <figure>
           <img
@@ -23,11 +23,9 @@ const Games = ({ game }) => {
               {game.ratings}
             </div>
           </div>
-          <Link to={`/details/${game.id}`}><button className="px-4 py-2 bg-[#7C3AED] text-white rounded-md hover:bg-[#6D28D9] transition">
-            Details
-          </button></Link>
+         
         </div>
-      </div>
+      </div></Link>
     </div>
   );
 };

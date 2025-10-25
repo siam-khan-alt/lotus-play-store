@@ -38,7 +38,7 @@ const Home = () => {
       <div className="flex mt-3 justify-end w-11/12 mx-auto">
         <Link to={'/games'}>
           <button
-            className=" btn hover:bg-[#6D28D9] border-[#14B8A6] bg-[#7C3AED]"
+            className=" btn hover:bg-[#6D28D9] border-[#14B8A6] bg-[#7C3AED] text-white"
           >
             More Game <FaArrowRight />
           </button>
