@@ -28,7 +28,8 @@ const Login = () => {
         setUser(result.user);
         navigate(goBack);
       })
-    .catch((err) => {toast.error(err.message)});
+    .catch((err) => {toast.error(err.message)})
+    ;
   };
 
   const handleGoogleSignin = () => {
