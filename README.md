@@ -97,29 +97,29 @@ The application uses a **single layout** for all pages (header + footer). Some r
 }
 ## 💻 Local Setup
 
-1. Clone the repository:
-git clone https://github.com/siam-khan-alt/lotus-play-store.git
-cd lotus-play-store
+1. **Clone the repository**  
+   git clone https://github.com/siam-khan-alt/lotus-play-store.git  
+   cd lotus-play-store
 
-2. Install dependencies:
-npm install
+2. **Install dependencies**  
+   npm install
 
-3. Setup Environment Variables:
-Create a `.env` file in the root and add your Firebase config:
-VITE_FIREBASE_API_KEY=your_api_key
-VITE_FIREBASE_AUTH_DOMAIN=your_auth_domain
-VITE_FIREBASE_PROJECT_ID=your_project_id
-VITE_FIREBASE_STORAGE_BUCKET=your_storage_bucket
-VITE_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
-VITE_FIREBASE_APP_ID=your_app_id
-> ⚠️ Keep `.env` private and do not push to GitHub.
+3. **Setup Environment Variables**  
+   Create a `.env` file in the root and add your Firebase config:  
+   VITE_FIREBASE_API_KEY=your_api_key  
+   VITE_FIREBASE_AUTH_DOMAIN=your_auth_domain  
+   VITE_FIREBASE_PROJECT_ID=your_project_id  
+   VITE_FIREBASE_STORAGE_BUCKET=your_storage_bucket  
+   VITE_FIREBASE_MESSAGING_SENDER_ID=your_sender_id  
+   VITE_FIREBASE_APP_ID=your_app_id  
 
-4. Run the development server:
-npm run dev
+   ⚠️ **Keep `.env` private and do not push to GitHub.**
 
-5. Build for production:
-npm run build
+4. **Run the development server**  
+   npm run dev
 
-6. Preview production build:
-npm run preview
+5. **Build for production**  
+   npm run build
 
+6. **Preview production build**  
+   npm run preview
