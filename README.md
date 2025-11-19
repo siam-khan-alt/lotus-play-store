@@ -94,8 +94,7 @@ The application uses a **single layout** for all pages (header + footer). Some r
     "react-icons": "^5.5.0",
     "react-spinners": "^0.17.0"
   }
-}
----
+}```
 ## 💻 Local Setup
 
 1. **Clone the repository**  
