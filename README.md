@@ -95,17 +95,18 @@ The application uses a **single layout** for all pages (header + footer). Some r
     "react-spinners": "^0.17.0"
   }
 }
-
+***
 
 ## 💻 Local Setup
 
 1. **Clone the repository**  
-   ```bash
+   ```json
    git clone https://github.com/siam-khan-alt/lotus-play-store.git
    cd lotus-play-store
 
 
-2. **Install dependencies**  
+2. **Install dependencies**
+```json 
   npm install
 
 3. **Setup Environment Variables**  
