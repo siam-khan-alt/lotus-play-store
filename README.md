@@ -94,15 +94,19 @@ The application uses a **single layout** for all pages (header + footer). Some r
     "react-icons": "^5.5.0",
     "react-spinners": "^0.17.0"
   }
-}```
+}
+
+
 ## 💻 Local Setup
 
 1. **Clone the repository**  
-   git clone https://github.com/siam-khan-alt/lotus-play-store.git  
+   ```bash
+   git clone https://github.com/siam-khan-alt/lotus-play-store.git
    cd lotus-play-store
 
+
 2. **Install dependencies**  
-   npm install
+  npm install
 
 3. **Setup Environment Variables**  
 # Create a `.env` file in the root and add your Firebase config
