@@ -20,11 +20,14 @@ const Navbar = () => {
   const links = (
     <>
       <NavLink to={"/"}>Home</NavLink>
-      <NavLink to={"/about"}>About</NavLink>
+      <NavLink to={"/games"}>Our Games</NavLink> 
+    <NavLink to={"/about"}>About us</NavLink>
+    <NavLink to={"/contact"}>Contact</NavLink> 
+    <NavLink to={"/support"}>Support</NavLink>
     </>
   );
   return (
-    <div className="">
+    <div className="fixed top-0 left-0 right-0 z-50 bg-[#0F172A] shadow-lg">
       <div className="w-11/12 mx-auto py-3 flex items-center justify-center bg-[#0F172A]  shadow-sm">
         <div className="navbar-start">
           <div className="dropdown">

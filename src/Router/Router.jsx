@@ -12,22 +12,24 @@ import ProfileUpdate from "../Pages/ProfileUpdate";
 import ResetPass from "../Pages/ResetPass";
 import Loader from "../Pages/Loader";
 import About from "../Pages/About";
+import Contact from "../Pages/Contact";
+import Support from "../Pages/Support";
 
 const router = createBrowserRouter([
   {
     path: "/",
     Component: MainLayout,
     children: [
-      { index: true, Component: Home, loader: () => fetch("../game.json"),
+      { index: true, Component: Home, loader: () => fetch("/allgame.json"),
          hydrateFallbackElement:<Loader></Loader>
        },
       {
-        path:'/games',Component: OurGames, loader: () => fetch("../game.json"), hydrateFallbackElement:<Loader></Loader>
+        path:'/games',Component: OurGames, loader: () => fetch("/allgame.json"), hydrateFallbackElement:<Loader></Loader>
       },
       {
         path: '/details/:Id', 
-        element:<PrivateRoute><Details/></PrivateRoute>
-        ,loader: () => fetch("../game.json"),
+        element:<Details/>
+        ,loader: () => fetch("/allgame.json"),
         hydrateFallbackElement:<Loader></Loader>
       },
       {
@@ -47,7 +49,10 @@ const router = createBrowserRouter([
       },
       {
         path: '/about', Component: About
-      }
+      },
+      {path: '/contact', Component:Contact
+      },
+      {path: '/support', Component: Support},
     ],
   },
   {path:'/*', Component: Error404}

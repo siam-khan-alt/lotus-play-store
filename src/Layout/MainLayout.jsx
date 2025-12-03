@@ -10,7 +10,8 @@ const MainLayout = () => {
   return (
     <div className="bg-[#0F172A] text-[#F8FAFC] h-screen">
       <Navbar></Navbar>
-      <AnimatePresence mode="wait">
+      <div className="mt-16">
+        <AnimatePresence mode="wait">
         <motion.div
           key={location.pathname}
           initial={{ opacity: 0, y: 20 }}
@@ -22,6 +23,7 @@ const MainLayout = () => {
           <Outlet />
         </motion.div>
       </AnimatePresence>
+      </div>
       <Footer></Footer>
       <ToastContainer />
     </div>

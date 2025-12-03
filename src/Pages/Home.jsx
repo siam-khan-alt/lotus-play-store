@@ -26,10 +26,10 @@ const Home = () => {
         <h3 className="text-2xl font-semibold text-center my-3">
           Populer Game
         </h3>
-        <div className="grid  items-center justify-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid  items-center justify-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {games
             .sort((a, b) => b.ratings - a.ratings)
-            .slice(0, 6)
+            .slice(0, 4)
             .map((game) => (
               <Games key={game.id} game={game}></Games>
             ))}

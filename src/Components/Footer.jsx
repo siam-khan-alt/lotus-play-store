@@ -1,60 +1,92 @@
 import React from "react";
 import { Link } from "react-router";
+import logo from '../assets/lotus-img.jpg';
+import { FaEnvelope, FaFacebook, FaLinkedin, FaMapMarkerAlt, FaPhoneAlt, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
+  const quickLinks = [
+    { name: "Home", path: "/" },
+    { name: "All Games", path: "/games" },
+    { name: "Contact Us", path: "/contact" },
+  ];
+  const supportLinks = [
+    { name: "Support Center", path: "/support" },
+    { name: "FAQ", path: "/support" },
+  ];
   return (
     <div>
-      <footer className="footer footer-horizontal footer-center bg-[#0F172A] text-[#F8FAFC]  rounded p-10">
-        <nav className="grid grid-flow-col gap-4">
-          <Link to={'/'} className="link link-hover">Home</Link>
-          <Link to={'/about'} className="link link-hover">About us</Link>
-          <Link to={'/games'} className="link link-hover">Our Games</Link>
-          
-          
-        </nav>
-        <nav>
-          <div className="grid grid-flow-col gap-4">
-            <a>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                className="fill-current"
-              >
-                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
-              </svg>
-            </a>
-            <a>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                className="fill-current"
-              >
-                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
-              </svg>
-            </a>
-            <a>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                className="fill-current"
-              >
-                <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
-              </svg>
-            </a>
-          </div>
-        </nav>
-        <aside>
-          <p>
-            Copyright © {new Date().getFullYear()} Lotus Play Store. All rights
-            reserved.
-          </p>
+      <footer className=" bg-[#1E293B] text-[#F8FAFC]  pt-12 pb-8  shadow-inner">
+        <div className="w-11/12 mx-auto grid grid-cols-2 md:grid-cols-5 gap-8 border-b border-[#7C3AED]/30 pb-10">
+        <aside className='col-span-2 md:col-span-2 lg:col-span-1'>
+            <Link to="/" className='flex items-center mb-3'>
+                <img src={logo} alt="Lotus Play Store Logo" className="h-8 w-8 rounded-full mr-2" />
+                <p className="font-bold text-xl text-[#F8FAFC]">
+                    Lotus Play Store
+                </p>
+            </Link>
+            <p className="text-sm text-gray-400 mt-3">
+                Providing quality entertainment since 2024. Your ultimate destination for digital games.
+            </p>
+            
+            <div className="flex space-x-4 mt-4">
+                <a href="https://facebook.com/yourpage" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className='hover:text-[#7C3AED] transition-colors'>
+                    <FaFacebook className="text-2xl" />
+                </a>
+                <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className='hover:text-[#7C3AED] transition-colors'>
+                    <FaTwitter className="text-2xl" />
+                </a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className='hover:text-[#7C3AED] transition-colors'>
+                    <FaLinkedin className="text-2xl" />
+                </a>
+            </div>
         </aside>
+        <nav>
+            <h6 className="font-bold text-[#7C3AED] text-lg mb-3">Quick Links</h6>
+            <div className='grid grid-flow-row gap-2'>
+                 {quickLinks.map((link) => (
+                    <Link key={link.name} to={link.path} className="link link-hover text-gray-300 hover:text-[#7C3AED] text-sm">
+                        {link.name}
+                    </Link>
+                ))}
+            </div>
+        </nav>
+
+        <nav>
+            <h6 className="font-bold text-[#7C3AED] text-lg mb-3">Help & Support</h6>
+            <div className='grid grid-flow-row gap-2'>
+                {supportLinks.map((link) => (
+                    <Link key={link.name} to={link.path} className="link link-hover text-gray-300 hover:text-[#7C3AED] text-sm">
+                        {link.name}
+                    </Link>
+                ))}
+            </div>
+            <Link to="/about" className="link link-hover text-gray-300 hover:text-[#7C3AED] text-sm mt-2 block">
+                About us
+            </Link>
+        </nav>
+        <nav className='col-span-2 md:col-span-2 lg:col-span-1'>
+            <h6 className="font-bold text-[#7C3AED] text-lg mb-3">Contact Info</h6>
+            <div className="space-y-3 text-gray-300 text-sm">
+                <div className="flex items-start">
+                    <FaEnvelope className="text-[#7C3AED] mt-1 mr-3 flex-shrink-0" />
+                    <span>support@lotusplaystore.com</span>
+                </div>
+                 <div className="flex items-start">
+                    <FaMapMarkerAlt className="text-[#7C3AED] mt-1 mr-3 flex-shrink-0" />
+                    <span>123 Game Street, CA, USA</span>
+                </div>
+                <div className="flex items-start">
+                    <FaPhoneAlt className="text-[#7C3AED] mt-1 mr-3 flex-shrink-0" />
+                    <span>+1 (555) 123-4567</span>
+                </div>
+            </div>
+        </nav>
+
+      </div>
+      
+      <div className="w-11/12 mx-auto text-center mt-6 text-gray-500 text-sm">
+        <p>Copyright © 2024 - All rights reserved by Lotus Play Store.</p>
+      </div>
       </footer>
     </div>
   );

@@ -1,0 +1,272 @@
+[
+  {
+    "id": "1",
+    "title": "Player Unknown's Battleground (PUBG)",
+    "coverPhoto": "https://i.ibb.co.com/v6s7bhrr/pubg.jpg",
+    "category": "FPS",
+    "downloadLink": "https://www.pubgmobile.com/en-US/home.shtml",
+    "ratings": 4.5,
+    "developer": "Krafton",
+    "releaseDate": "December 2017",
+    "publisher": "Krafton, Inc.",
+    "platform": ["PC", "Mobile", "Consoles"],
+    "description": "PUBG Mobile is a pioneering battle royale experience that pits 100 players against each other in a struggle for survival. Land, loot, and outwit your opponents to become the last person standing. With continuous updates and new game modes like the recent Frost Survival Mode and various Arena modes, the game offers intense, strategic, and thrilling gameplay across huge, diverse maps like Erangel and Miramar. It emphasizes tactical positioning, teamwork, and inventory management alongside high-stakes shooting mechanics, ensuring every match is a unique, edge-of-your-seat experience. The game is known for its realistic graphics and continuous e-sports support.",
+    "minimumSpecs": {
+      "OS": "Windows 7/8.1/10 (64-bit)",
+      "CPU": "Intel Core i5-4430 / AMD FX-6300",
+      "RAM": "8 GB",
+      "GPU": "NVIDIA GeForce GTX 960 / AMD Radeon R7 370",
+      "Storage": "40 GB HDD"
+    },
+    "recommendedSpecs": {
+      "OS": "Windows 10 (64-bit)",
+      "CPU": "Intel Core i5-6600K / AMD Ryzen 5 1600",
+      "RAM": "16 GB",
+      "GPU": "NVIDIA GeForce GTX 1060 / AMD Radeon RX 580",
+      "Storage": "40 GB SSD"
+    }
+  },
+  {
+    "id": "2",
+    "title": "Valorant",
+    "coverPhoto": "https://i.ibb.co.com/QFk3wyM4/varlorant.jpg",
+    "category": "Tactical Shooter",
+    "downloadLink": "https://playvalorant.com/",
+    "ratings": 4.7,
+    "developer": "Riot Games",
+    "releaseDate": "June 2020",
+    "publisher": "Riot Games",
+    "platform": ["PC"],
+    "description": "Valorant is a 5v5 character-based tactical shooter where precision gunplay meets unique agent abilities. Choose from a diverse cast of Agents, each with unique skills, to gain a competitive edge. The game emphasizes tactical planning, fast reflexes, and teamwork, requiring players to master map layouts and economic management. With its high tick-rate servers and robust anti-cheat system, Valorant delivers a top-tier, competitive FPS experience.",
+    "minimumSpecs": {
+      "OS": "Windows 7/8/10 (64-bit)",
+      "CPU": "Intel Core 2 Duo E8400 / Athlon 200GE",
+      "RAM": "4 GB",
+      "GPU": "Intel HD 4000 / Radeon R5 200",
+      "Storage": "20 GB SSD"
+    },
+    "recommendedSpecs": {
+      "OS": "Windows 10 (64-bit)",
+      "CPU": "Intel Core i3-4150 / AMD Ryzen 3 1200",
+      "RAM": "8 GB",
+      "GPU": "GeForce GT 730 / Radeon R7 240",
+      "Storage": "20 GB SSD"
+    }
+  },
+  {
+    "id": "3",
+    "title": "GTA V",
+    "coverPhoto": "https://i.ibb.co.com/yFG23jgN/gta-v.jpg",
+    "category": "Open World",
+    "downloadLink": "https://www.rockstargames.com/V/",
+    "ratings": 4.8,
+    "developer": "Rockstar Games",
+    "releaseDate": "September 2013",
+    "publisher": "Rockstar Games",
+    "platform": ["PC", "PS3/4/5", "XBOX 360/One/Series X/S"],
+    "description": "Grand Theft Auto V is an expansive and critically acclaimed open-world action-adventure game set in the sprawling city of Los Santos. Players take control of three diverse protagonists—Michael, Franklin, and Trevor—whose lives intertwine as they execute daring heists. The game features a massive, detailed map for exploration, complex mission structures, and the incredibly popular, constantly evolving online component, GTA Online.",
+    "minimumSpecs": {
+      "OS": "Windows 7/8/10 (64-bit)",
+      "CPU": "Intel Core 2 Quad Q6600 / AMD Phenom 9850",
+      "RAM": "4 GB",
+      "GPU": "NVIDIA 9800 GT 1GB / AMD HD 4870 1GB",
+      "Storage": "72 GB HDD"
+    },
+    "recommendedSpecs": {
+      "OS": "Windows 10 (64-bit)",
+      "CPU": "Intel Core i5 3470 / AMD X8 FX-8350",
+      "RAM": "8 GB",
+      "GPU": "NVIDIA GTX 660 2GB / AMD HD7870 2GB",
+      "Storage": "72 GB SSD"
+    }
+  },
+  {
+    "id": "4",
+    "title": "Minecraft",
+    "coverPhoto": "https://i.ibb.co.com/PsM85v1D/minecraft.jpg",
+    "category": "Sandbox",
+    "downloadLink": "https://www.minecraft.net/en-us",
+    "ratings": 4.6,
+    "developer": "Mojang Studios",
+    "releaseDate": "November 2011",
+    "publisher": "Mojang Studios/Xbox Game Studios",
+    "platform": ["PC", "Mobile", "Consoles", "VR"],
+    "description": "Minecraft is the ultimate sandbox game about placing blocks and going on adventures. Explore randomly generated worlds, survive dangerous mobs at night, and build anything imaginable—from simple homes to grand castles. The game offers two primary modes: Creative Mode, where players have unlimited resources, and Survival Mode, where players must acquire resources, build to stay safe, and maintain health and hunger.",
+    "minimumSpecs": {
+      "OS": "Windows 7/8/10",
+      "CPU": "Intel Core i3-3210 / AMD A8-7600",
+      "RAM": "4 GB",
+      "GPU": "Intel HD Graphics 4000 / Radeon R5 series",
+      "Storage": "4 GB"
+    },
+    "recommendedSpecs": {
+      "OS": "Windows 10",
+      "CPU": "Intel Core i5-4690 / AMD A10-7800",
+      "RAM": "8 GB",
+      "GPU": "NVIDIA GeForce 700 series / AMD Radeon Rx 200 series",
+      "Storage": "4 GB SSD"
+    }
+  },
+  {
+    "id": "5",
+    "title": "Fortnite",
+    "coverPhoto": "https://i.ibb.co.com/LdKwJMkm/Fortnite.webp",
+    "category": "Battle Royale",
+    "downloadLink": "https://www.epicgames.com/fortnite/en-US/home",
+    "ratings": 4.4,
+    "developer": "Epic Games",
+    "releaseDate": "July 2017",
+    "publisher": "Epic Games",
+    "platform": ["PC", "PS4/5", "XBOX One/Series X/S", "Switch", "Mobile"],
+    "description": "Fortnite is a global cultural phenomenon known for its unique blend of Battle Royale shooting and building mechanics. Players drop onto an island, scavenge for weapons, and eliminate opponents while a storm shrinks the playable area. The building aspect adds a layer of strategic depth, allowing players to quickly construct shelters and defenses. Fortnite is constantly evolving with seasonal content, events, and collaborations.",
+    "minimumSpecs": {
+      "OS": "Windows 7/8/10 (64-bit)",
+      "CPU": "Intel Core i3-3225 3.3 GHz",
+      "RAM": "8 GB",
+      "GPU": "Intel HD 4000 (DX11 required)",
+      "Storage": "26 GB"
+    },
+    "recommendedSpecs": {
+      "OS": "Windows 10 (64-bit)",
+      "CPU": "Intel Core i5-7300U 3.5 GHz",
+      "RAM": "16 GB",
+      "GPU": "NVIDIA GTX 960 / AMD R9 280 or equivalent DX11 GPU",
+      "Storage": "26 GB SSD"
+    }
+  },
+  {
+    "id": "6",
+    "title": "Call of Duty: Mobile",
+    "coverPhoto": "https://i.ibb.co.com/VYLvQGBt/call-of-dity.jpg",
+    "category": "FPS",
+    "downloadLink": "https://www.callofduty.com/mobile",
+    "ratings": 4.6,
+    "developer": "Activision",
+    "releaseDate": "October 2019",
+    "publisher": "Activision",
+    "platform": ["Mobile"],
+    "description": "Call of Duty: Mobile brings the iconic FPS franchise experience to your smartphone. The game features classic multiplayer modes like Team Deathmatch and Search & Destroy on legendary maps (e.g., Shipment, Nuketown), as well as a full Battle Royale mode. It offers high-quality console-level graphics, customizable controls, and competitive seasonal ranking, making it one of the most popular mobile shooters globally.",
+    "minimumSpecs": {
+      "OS": "Android 5.1 / iOS 9",
+      "CPU": "Dual Core 1.2 GHz",
+      "RAM": "2 GB",
+      "GPU": "Adreno 306 / PowerVR G6400",
+      "Storage": "5 GB"
+    },
+    "recommendedSpecs": {
+      "OS": "Android 10 / iOS 13",
+      "CPU": "Snapdragon 845 / Apple A12 Bionic",
+      "RAM": "6 GB",
+      "GPU": "Adreno 630 / PowerVR GT7600",
+      "Storage": "10 GB"
+    }
+  },
+  {
+    "id": "7",
+    "title": "League of Legends",
+    "coverPhoto": "https://i.ibb.co.com/Q3ZwMnhg/league-of-legends.jpg",
+    "category": "MOBA",
+    "downloadLink": "https://www.leagueoflegends.com/",
+    "ratings": 4.7,
+    "developer": "Riot Games",
+    "releaseDate": "October 2009",
+    "publisher": "Riot Games",
+    "platform": ["PC", "Mac"],
+    "description": "League of Legends (LoL) is the world's most popular MOBA (Multiplayer Online Battle Arena) game. Two teams of five powerful champions, each with a unique design and playstyle, clash across three lanes to destroy the enemy's Nexus. The game demands deep strategy, quick decision-making, and coordinated team play. LoL is the pinnacle of e-sports, featuring massive global tournaments and a continuously expanding roster of champions.",
+    "minimumSpecs": {
+      "OS": "Windows 7/8/10",
+      "CPU": "Intel Core i3-530 / AMD A6-3650",
+      "RAM": "4 GB",
+      "GPU": "NVIDIA GeForce 9600 GT / AMD HD 6570",
+      "Storage": "16 GB"
+    },
+    "recommendedSpecs": {
+      "OS": "Windows 10",
+      "CPU": "Intel Core i5-3300 / AMD Ryzen 5 1000 series",
+      "RAM": "8 GB",
+      "GPU": "NVIDIA GeForce GTX 560 / AMD Radeon HD 6950",
+      "Storage": "16 GB SSD"
+    }
+  },
+  {
+    "id": "8",
+    "title": "Among Us",
+    "coverPhoto": "https://i.ibb.co.com/rfR8nTGW/Among-Us-Key-Art.webp",
+    "category": "Party Game",
+    "downloadLink": "https://www.innersloth.com/gameAmongUs.php",
+    "ratings": 4.3,
+    "developer": "InnerSloth",
+    "releaseDate": "November 2018",
+    "publisher": "InnerSloth",
+    "platform": ["PC", "Mobile", "Consoles"],
+    "description": "Among Us is a social deduction party game set in space. Players are divided into Crewmates and Impostors. Crewmates must complete tasks to keep the ship running, while Impostors secretly sabotage the ship and eliminate the Crewmates. The core gameplay revolves around emergency meetings where players debate and vote to eject suspected Impostors. It’s a game of trust, betrayal, and clever lying.",
+    "minimumSpecs": {
+      "OS": "Windows 7 SP1+",
+      "CPU": "Intel Pentium or equivalent",
+      "RAM": "1 GB",
+      "GPU": "Integrated Graphics",
+      "Storage": "250 MB"
+    },
+    "recommendedSpecs": {
+      "OS": "Windows 10",
+      "CPU": "Intel Core i3 or equivalent",
+      "RAM": "2 GB",
+      "GPU": "Dedicated Graphics Card",
+      "Storage": "500 MB"
+    }
+  },
+  {
+    "id": "9",
+    "title": "Apex Legends",
+    "coverPhoto": "https://i.ibb.co.com/GvkT9fYF/apex-legend.jpg",
+    "category": "Battle Royale",
+    "downloadLink": "https://www.ea.com/games/apex-legends",
+    "ratings": 4.5,
+    "developer": "Respawn",
+    "releaseDate": "February 2019",
+    "publisher": "Electronic Arts (EA)",
+    "platform": ["PC", "PS4/5", "XBOX One/Series X/S", "Switch", "Mobile"],
+    "description": "Apex Legends is a free-to-play squad-based Battle Royale shooter where legendary characters, each with their own unique abilities, fight for fame and fortune on the fringes of the Frontier. The game introduces innovative features like the 'Ping System' for easy communication and 'Respawn Beacons' for bringing back fallen teammates, making teamwork essential for victory.",
+    "minimumSpecs": {
+      "OS": "Windows 7 (64-bit)",
+      "CPU": "Intel Core i3-6300 / AMD FX-4350",
+      "RAM": "6 GB",
+      "GPU": "NVIDIA GeForce GT 640 / Radeon HD 7730",
+      "Storage": "56 GB"
+    },
+    "recommendedSpecs": {
+      "OS": "Windows 10 (64-bit)",
+      "CPU": "Intel Core i5-3570K / AMD Ryzen 5 1300X",
+      "RAM": "8 GB",
+      "GPU": "NVIDIA GeForce GTX 970 / AMD Radeon R9 290",
+      "Storage": "56 GB SSD"
+    }
+  },
+  {
+    "id": "10",
+    "title": "The Witcher 3: Wild Hunt",
+    "coverPhoto": "https://i.ibb.co.com/vx530DBm/the-witcher-game-wallpaper-image.jpg",
+    "category": "RPG",
+    "downloadLink": "https://thewitcher.com/en/witcher3",
+    "ratings": 4.9,
+    "developer": "CD Projekt",
+    "releaseDate": "May 2015",
+    "publisher": "CD Projekt RED",
+    "platform": ["PC", "PS4/5", "XBOX One/Series X/S", "Switch"],
+    "description": "The Witcher 3: Wild Hunt is a massive, story-driven open-world RPG set in a morally indifferent fantasy universe. You are Geralt of Rivia, a monster hunter for hire. The game features breathtaking landscapes, deep character development, impactful narrative choices, and a robust combat system involving swords and magic. It is widely considered one of the greatest RPGs ever made, offering hundreds of hours of immersive gameplay.",
+    "minimumSpecs": {
+      "OS": "Windows 7/8/10 (64-bit)",
+      "CPU": "Intel Core i5-2500K / AMD Phenom II X4 940",
+      "RAM": "6 GB",
+      "GPU": "NVIDIA GeForce GTX 660 / AMD Radeon HD 7870",
+      "Storage": "40 GB"
+    },
+    "recommendedSpecs": {
+      "OS": "Windows 10 (64-bit)",
+      "CPU": "Intel Core i7-3770 / AMD FX-8350",
+      "RAM": "8 GB",
+      "GPU": "NVIDIA GeForce GTX 770 / AMD Radeon R9 290",
+      "Storage": "40 GB SSD"
+    }
+  }
+]

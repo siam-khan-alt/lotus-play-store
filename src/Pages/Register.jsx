@@ -9,10 +9,11 @@ import { toast } from "react-toastify";
 const Register = () => {
   const [show, setShow] = useState(false);
   useTitle("Register");
-  const { SignUp, profileUpdate, SignInGoogle, setUser,setLoading } = use(AuthContext);
+  const { SignUp, profileUpdate, SignInGoogle, setUser, setLoading } =
+    use(AuthContext);
   const handleSignUp = (e) => {
     e.preventDefault();
-    setLoading(true)
+    setLoading(true);
     const email = e.target.email?.value;
     const displayName = e.target.name?.value;
     const photoURL = e.target.photo?.value;
@@ -23,7 +24,7 @@ const Register = () => {
       return;
     }
     if (!/[A-Z]/.test(password)) {
-     toast.error("Password at least one uppercase letter!");
+      toast.error("Password at least one uppercase letter!");
       return;
     }
     if (!/[a-z]/.test(password)) {
@@ -37,10 +38,11 @@ const Register = () => {
           .then(() => {})
           .catch((err) => toast.error(err.message));
         toast.success("create succesfull");
-        e.target.reset()
+        e.target.reset();
       })
-      .catch((err) => {toast.error(err.message)
-        setLoading(false)
+      .catch((err) => {
+        toast.error(err.message);
+        setLoading(false);
       });
   };
 
@@ -49,7 +51,7 @@ const Register = () => {
       .then((res) => {
         setLoading(false);
         setUser(res.user);
-        
+
         toast.success("Signin successful");
       })
       .catch((e) => {
@@ -111,8 +113,9 @@ const Register = () => {
               </form>
               <p className="text-center">OR</p>
               <button
-              onClick={handleGoogleSignin}
-               className="btn bg-[#1E293B] text-white border border-gray-500 rounded-md hover:bg-[#2C3A59] transition ">
+                onClick={handleGoogleSignin}
+                className="btn bg-[#1E293B] text-white border border-gray-500 rounded-md hover:bg-[#2C3A59] transition "
+              >
                 <FaGoogle /> Login With Google
               </button>
               <p className="text-gray-400 text-center mt-3 ">
