@@ -3,9 +3,9 @@ import React from "react";
 const Newslater = () => {
   return (
     <div>
-      <div className="bg-[#1E293B] text-white py-10 mt-5">
+      <div className="bg-[#0F172A] text-white py-10 ">
         <div className="w-11/12 mx-auto text-center space-y-4">
-          <h2 className="text-2xl font-bold">Subscribe to Our Newsletter</h2>
+          <h2 className="text-3xl font-bold text-[#7C3AED]">Subscribe to Our Newsletter</h2>
           <p className="text-gray-300">
             Get updates about new games,indie developer news, and exclusive
             offers!

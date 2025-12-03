@@ -59,7 +59,7 @@ const Navbar = () => {
           <img src={logo} alt="" className="h-10 w-10 rounded-full" />
           </Link>
           <Link to={'/'}>
-          <h4 className="font-bold">Play Store</h4>
+          <h4 className="font-bold text-[#7C3AED]">Play Store</h4>
           </Link>
         </div>
         

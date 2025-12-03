@@ -7,6 +7,8 @@ import { FaArrowRight } from "react-icons/fa";
 import Newslater from "../Components/Newslater";
 import Games from "../Components/Games";
 import useTitle from "../Hooks/useTitle";
+import CategorySection from "../Components/CategorySection";
+import PromotionBanner from "../Components/PromotionBanner";
 
 
 const Home = () => {
@@ -23,7 +25,7 @@ const Home = () => {
       </div>
 
       <div className="grid items-center justify-center w-11/12 mx-auto">
-        <h3 className="text-2xl font-semibold text-center my-3">
+        <h3 className="text-3xl font-bold text-center my-10 text-[#7C3AED]">
           Populer Game
         </h3>
         <div className="grid  items-center justify-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -44,7 +46,9 @@ const Home = () => {
           </button>
         </Link>
       </div>
-      <Newslater></Newslater>
+      <CategorySection/>
+      <PromotionBanner/>
+      <Newslater/>
     </div>
   );
 };

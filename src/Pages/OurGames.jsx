@@ -47,9 +47,9 @@ const OurGames = () => {
     setDisplayGames(sortedAndFiltered);
   }, [initialGames, sortBy, filterCategory]);
   return (
-    <div className="bg-[#0F172A] pb-12">
+    <div className="bg-[#0F172A] py-12">
       <div className="grid items-center justify-center w-11/12 px-2 mx-auto">
-        <h3 className="text-2xl md:text-4xl lg:text-6xl font-semibold text-center my-3 md:my-5 lg:my-7 ">
+        <h3 className="text-4xl md:text-5xl font-bold text-center mb-6 text-[#7C3AED]">
           Our All Games
         </h3>
         <div className="flex flex-col md:flex-row justify-between items-center mb-10 p-4 bg-[#1E293B] rounded-lg shadow-xl">

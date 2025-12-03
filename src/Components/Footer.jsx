@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router";
 import logo from '../assets/lotus-img.jpg';
-import { FaEnvelope, FaFacebook, FaLinkedin, FaMapMarkerAlt, FaPhoneAlt, FaTwitter } from "react-icons/fa";
+import { FaEnvelope, FaFacebook, FaGithub, FaLinkedin, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 
 const Footer = () => {
   const quickLinks = [
@@ -20,7 +20,7 @@ const Footer = () => {
         <aside className='col-span-2 md:col-span-2 lg:col-span-1'>
             <Link to="/" className='flex items-center mb-3'>
                 <img src={logo} alt="Lotus Play Store Logo" className="h-8 w-8 rounded-full mr-2" />
-                <p className="font-bold text-xl text-[#F8FAFC]">
+                <p className="font-bold text-xl text-[#7C3AED]">
                     Lotus Play Store
                 </p>
             </Link>
@@ -29,13 +29,13 @@ const Footer = () => {
             </p>
             
             <div className="flex space-x-4 mt-4">
-                <a href="https://facebook.com/yourpage" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className='hover:text-[#7C3AED] transition-colors'>
+                <a href="https://www.facebook.com/profile.php?id=100078237812772" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className='hover:text-[#7C3AED] transition-colors'>
                     <FaFacebook className="text-2xl" />
                 </a>
-                <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className='hover:text-[#7C3AED] transition-colors'>
-                    <FaTwitter className="text-2xl" />
+               <a href="https://github.com/siam-khan-alt" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className='hover:text-[#7C3AED] transition-colors'>
+                    <FaGithub className="text-2xl" />
                 </a>
-                <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className='hover:text-[#7C3AED] transition-colors'>
+                <a href="https://www.linkedin.com/in/siam-khan-sp99/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className='hover:text-[#7C3AED] transition-colors'>
                     <FaLinkedin className="text-2xl" />
                 </a>
             </div>
@@ -85,7 +85,7 @@ const Footer = () => {
       </div>
       
       <div className="w-11/12 mx-auto text-center mt-6 text-gray-500 text-sm">
-        <p>Copyright © 2024 - All rights reserved by Lotus Play Store.</p>
+        <p>Copyright © 2025 - All rights reserved by Lotus Play Store.</p>
       </div>
       </footer>
     </div>
