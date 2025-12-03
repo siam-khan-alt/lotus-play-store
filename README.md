@@ -25,6 +25,8 @@ The application uses a **single layout** for all pages (header + footer). Some r
 - **Banner Slider:** 3+ slides showcasing featured games.
 - **Popular Games Section:** Top 3 games sorted by rating with card layout.
 - **Newsletter Section:** Email subscription form to get updates.
+- **Explore by Category Grid:** A dedicated section displaying key game genres (e.g., FPS, RPG) for easier navigation and discovery. 
+- **Promotional Call to Action (CTA) Banner:** A dedicated banner encouraging users to sign up or join the community for exclusive benefits. 
 - Fully responsive for mobile, tablet, and desktop.
 
 ### 2. Game Details Page (Protected)
@@ -54,6 +56,15 @@ The application uses a **single layout** for all pages (header + footer). Some r
 ### 6. Additional Routes
 - About Us Page (`/about-us`): Provides project overview and developer info.
 
+### 7. All Games Page
+- Complete catalogue view with Sorting (Title/Rating) and Filtering (Category) functionality.
+
+### 8. Support Page
+- Dedicated page for FAQ and quick help resources.
+
+### 9. Contact Us Page 
+- Form-based contact interface with key company info.
+
 ---
 
 ## ⚡ Features
@@ -65,7 +76,11 @@ The application uses a **single layout** for all pages (header + footer). Some r
 - Newsletter subscription section  
 - Update profile information  
 - Protected Game Details route  
-- 404 Page for unmatched routes  
+- 404 Page for unmatched routes
+- Advanced Game Filtering & Sorting (By Category and Rating/Title).
+- Enhanced Home Page Layout (5 distinct sections including Category Grid and Promotional CTA).
+- Modular Component Structure (New CategorySection, PromotionBanner components).
+- Full Dynamic Details View (Displaying minimum and recommended system specifications).  
 
 ---
 
