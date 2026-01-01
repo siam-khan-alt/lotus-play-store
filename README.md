@@ -7,6 +7,26 @@ A modern **React + Vite** web application for discovering, browsing, and downloa
 
 ---
 
+## 📸 Project Showcase
+
+<p align="center">
+  <b>1. Immersive Gaming Library - Homepage</b><br>
+  <img src="https://i.ibb.co.com/q6CKVtS/Lotous-home.png" alt="Lotus Home" width="90%" />
+</p>
+
+<br>
+
+<p align="center">
+  <img src="https://i.ibb.co.com/mF4vGGT5/lotus-all.png" alt="All Games Collection" width="48%" />
+  <img src="https://i.ibb.co.com/Mxt0Dn0c/lotous-Details.png" alt="Game Details Page" width="48%" />
+</p>
+
+<p align="center">
+  <i>(Left: Advanced Game Filtering & Sorting | Right: Detailed Game Information View)</i>
+</p>
+
+---
+
 ## 📖 Project Overview
 Lotus Play Store is an online game library where users can:
 - Browse indie games and see detailed information.
